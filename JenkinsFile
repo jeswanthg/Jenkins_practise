@@ -4,11 +4,7 @@ def d = [
 ]
 
 def props = [:]
-
-podTemplate{
-checkout scm
 props = readProperties(defaults:d, file:'test.properties')
-}
 
 pipeline{
 agent any
